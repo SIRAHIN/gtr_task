@@ -24,7 +24,7 @@ class _CustomerListPageState extends State<CustomerListPage> {
 
   @override
   void initState() {
-  // -- pagination for new customer list -- //
+  // -- infinite scroll pagination for new customer list -- //
     _fetchCustomers(isLoadingInitial: true, pageNo: _pageNo);
     _scrollController = ScrollController();
     _scrollController.addListener(() {
@@ -48,7 +48,7 @@ class _CustomerListPageState extends State<CustomerListPage> {
         _isLoading = true;
       });
     }
-    
+
     await _controller.fetchCustomers(widget.token, pageNo: pageNo);
 
     setState(() {

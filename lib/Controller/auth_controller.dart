@@ -24,7 +24,7 @@ class AuthController extends GetxController {
         ));
       } else {
         // Showing error message
-        Get.snackbar("Error", "Login failed");
+        Get.snackbar("Error", "Wrong Email or Password");
       }
     }
   }

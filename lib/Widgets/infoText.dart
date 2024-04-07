@@ -15,7 +15,7 @@ class InfoText extends StatelessWidget {
     return Padding(
       padding: const EdgeInsets.only(top: 9.0),
       child: Text(
-        "Phone Number - ${customer.phone ?? 'unknown'} \nLast Transection - ${customer.lastTransactionDate ?? 'unknown'} \nEmail - ${customer.email ?? 'unknown'} \nPrimaryAddress - ${customer.primaryAddress ?? 'unknown'} \nSecoundaryAddress - ${customer.secoundaryAddress ?? 'unknown'}  \nNotes - ${customer.notes ?? 'unknown'} \nPhone - ${customer.phone ?? 'unknown'}   \nLast Transaction - ${customer.lastTransactionDate ?? 'unknown'} ",
+        "Phone Number - ${customer.phone ?? 'unknown'} \nEmail - ${customer.email ?? 'unknown'} \nPrimaryAddress - ${customer.primaryAddress ?? 'unknown'} \nSecoundaryAddress - ${customer.secoundaryAddress ?? 'unknown'}  \nNotes - ${customer.notes ?? 'unknown'} \nPhone - ${customer.phone ?? 'unknown'}   \nLast Transaction - ${customer.lastTransactionDate ?? 'unknown'} ",
         style: TextStyle(fontSize: 15),
       ),
     );
